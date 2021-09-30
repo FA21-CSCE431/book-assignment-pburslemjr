@@ -1,1 +1,1 @@
-release: rails db:schema:load
+release: rails db:migrate
