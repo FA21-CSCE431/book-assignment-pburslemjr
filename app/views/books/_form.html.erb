@@ -22,7 +22,7 @@
   </div>
   <div class="field">
     <%= form.label :price %>
-    <%= form.number_field :price, :step =>0.01 %>
+    <%= form.number_field :price, :step =>0.01, :input_html => { :value => 'user@domain.com' } %>
     
   </div>
   <div class="field">
@@ -39,5 +39,6 @@
 
   <div class="actions">
     <%= form.submit %>
+    
   </div>
 <% end %>
