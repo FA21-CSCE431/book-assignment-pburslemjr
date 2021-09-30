@@ -11,10 +11,31 @@
     </div>
   <% end %>
 
+  
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, :step =>0.01 %>
+    
+  </div>
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_field :date, as: :date_time_picker, input_html:
+    { data:
+      {
+        date_format: "YYYY-MM-DD",
+      }
+    } %>
+  </div>
+
+
 
   <div class="actions">
     <%= form.submit %>
